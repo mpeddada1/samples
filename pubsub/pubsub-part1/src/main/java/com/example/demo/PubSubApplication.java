@@ -29,7 +29,7 @@ public class PubSubApplication {
 
 	@Bean
 	public CommandLineRunner commandLineRunner() {
-		String projectId = "mpeddada-test";
+		String projectId = "my-project";
 		String topicId = "my-topic";
 		String subscriptionId = "my-sub";
 		return args -> {
