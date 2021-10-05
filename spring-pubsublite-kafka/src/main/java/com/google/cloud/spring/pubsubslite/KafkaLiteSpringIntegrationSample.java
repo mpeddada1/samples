@@ -77,8 +77,10 @@ public class KafkaLiteSpringIntegrationSample {
 	public ProducerFactory<?, ?> kafkaProducerFactory() {
 		// Auto-configuration of properties can be used here to set things like batch settings.
 		// We would need to initialize KafkaLiteProperties first and then pass it into LiteProducerFactory.
+		// At the moment, initializing a Publisher instance to set pub/sub lite properties isn't as straightforward
+		// because PubsubLiteProducer (provided by the adapter) which takes in these settings is not public.
 		LiteProducerFactory producerFactory = new LiteProducerFactory();
-		TopicPath topicPath = TopicPath.parse("projects/931854040550/locations/us-central1-a/topics/my-second-topic");
+		TopicPath topicPath = TopicPath.parse(this.topicPath);
 		producerFactory.setTopicPath(topicPath);
 		return producerFactory;
 	}
