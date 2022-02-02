@@ -13,6 +13,8 @@ It tests out the possibility of using **existing** Spring-Kafka modules such as 
       - [java-pubsublite](https://github.com/googleapis/java-pubsublite)
       - [spring-boot/spring-kafka](https://github.com/spring-projects/spring-kafka)
       - [spring-integration-kafka](https://github.com/spring-projects/spring-integration-kafka)
+      
+Additionally, this module also includes an implementation of our own version of the `KafkaTemplate`, called [`KafkaPubSubLite`](https://github.com/mpeddada1/samples/blob/d8c8813a5b4201014de285010921fedda5c6a4f7/spring-pubsublite-kafka/src/main/java/com/google/cloud/spring/pubsubslite/KafkaPubSubLite.java#L68). The interface of the class appears to communicating with Kafka but in reality, it actuallt talks to Pub/Sub lite. **Note** that this class is not used anywhere. It is just there to show a different approach to porting applications in Spring between the two messaging services. 
      
 ### Direct communication with Pub/Sub Lite through Spring
 The `spring-pubsublite` module contains a sample for Spring support for using Pub/Sub Lite directly. The samples provide implementation of a Pub/Sub Lite template ( similar in theory to the PubSubTemplate which is currently provided by the Spring Cloud GCP project). It tests out sending and receiving messages to Pub/Sub Lite topics and subscriptions through the template. 
