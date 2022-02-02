@@ -1,6 +1,6 @@
 # samples
 
-To experiment with sample apps.
+### Setup Instructions
 In order to experiment with these modules, we first need to manually create a topic and subscription, following the instructions in the [official documentation](https://cloud.google.com/pubsub/lite/docs/topics).  The samples below only experiment with sending and receiving messages from the Pub/Sub Lite topics and subscriptions. 
 
 ### Kafka to Pub/Sub Lite Migration for Spring Integration Customers
