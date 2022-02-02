@@ -3,7 +3,7 @@
 To experiment with sample apps.
 In order to experiment with these modules, we first need to manually create a topic and subscription, following the instructions in the [official documentation](https://cloud.google.com/pubsub/lite/docs/topics).  The samples below only experiment with sending and receiving messages from the Pub/Sub Lite topics and subscriptions. 
 
-### Kafka to Pub/Sub Lite Migration through Spring
+### Kafka to Pub/Sub Lite Migration for Spring Integration Customers
 The `spring-pubsublite-kafka` contains samples exemplify a workflow that allows users to port their Kafka applications to Pub/Sub Lite with the help of Spring as the fascade. They leverage the Pub/Sub Lite-Kafka adapter in order to achieve this. 
 It tests out the possibility of using **existing** Spring-Kafka modules such as KafkaTemplate and KafkaMessageListenerContainer to publish to Pub/Sub Lite. 
 
