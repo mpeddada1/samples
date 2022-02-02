@@ -24,3 +24,7 @@ The `pubsub-lite-kafka` module just tests out the [Pub/Sub Lite Kafka Quickstart
 
 ### Understanding Pub/Sub Lite through Cloud Libraries
 The `pubsub-lite` module just tests out the [Pub/Sub Lite Quickstart](https://cloud.google.com/pubsub/lite/docs/samples/pubsublite-quickstart-publisher).
+
+### Understanding Pub/Sub
+The `pubsub` module just tests out Pub/Sub through Cloud libraries and the Spring Cloud GCP template. 
+
